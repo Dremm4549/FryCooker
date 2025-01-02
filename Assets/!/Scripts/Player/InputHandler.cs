@@ -34,4 +34,9 @@ public class InputHandler : MonoBehaviour, IA_Input.IPlayerActions
     {
         moveInput = context.ReadValue<Vector2>();
     }
+
+    public void OnInteract(InputAction.CallbackContext context)
+    {
+
+    }
 }

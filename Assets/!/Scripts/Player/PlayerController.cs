@@ -15,8 +15,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] Camera cam;
     [SerializeField] Transform playerBody;
-    [SerializeField] Vector2 camRotation = Vector2.zero;
-    [SerializeField] Vector2 camTargetRotation = Vector2.zero;
+    private Vector2 camRotation = Vector2.zero;
+    private Vector2 camTargetRotation = Vector2.zero;
 
     private void Awake()
     {
@@ -42,9 +42,4 @@ public class PlayerController : MonoBehaviour
 
         cam.transform.rotation = Quaternion.Euler(camRotation.y, camRotation.x, 0f);
     }
-
-
-
-
-
 }
